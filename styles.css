@@ -1,0 +1,224 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+     background-image: url('https://i.pinimg.com/736x/5c/e3/02/5ce302308f641a47bd1ebda2b59cd9d1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+    color: ghostwhite;
+  }
+  
+  header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+
+  nav a{
+  font-size: 1.8rem;
+  color: rgb(126, 126, 126);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+  }
+  
+    .logo{
+      font-size: 3rem;
+      color: rgb(177, 177, 177);
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.5s ease;
+  }
+  
+  .logo:hover{
+    transform: scale(1.1);
+  }
+  nav a:hover, nav a:active {
+    color: #9c9c9c;
+    text-shadow: 2px 2px 30px #c4c4c4;
+  }
+.home-content{
+    margin-left: 8%;
+    margin-top: 20%;
+}
+
+.home-content h1{
+     font-size: 50px;
+     color: #494949;
+     margin-bottom: 20px;
+}
+
+.home-content p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.images img{
+    top: 25%;
+    position: absolute;
+    right: 10%;
+    bottom: 60%;
+    border-radius: 50%;
+}
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  color: #9c9c9c;
+  background-color: transparent;
+  border: 0.2rem solid #c4c4c4;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+}
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.3) translateY(-5px);
+}
+span{
+  color: rgb(109, 109, 109);
+}
+
+.typing-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span{
+  position: relative;
+}
+
+.typing-text span::before{
+   content:"Software Development";
+   color:#666666;
+   animation:words 20s infinite;
+}
+
+.typing-text span::after{
+   content:"";
+   position: absolute;
+   width: calc(100% + 8px);
+   height: 100%;
+   border-left:3px solid black;
+   right: -8;
+   animation:cursor 0.6s infinite;
+}
+
+
+@keyframes cursor{
+  to{
+    border-left: 3px solid gray; 
+  }
+}
+
+@keyframes words{
+  0%, 20%{
+  content:"Web Developer";
+}
+21%, 40%{
+  content:"Digital Forensic Investigator";
+}
+41%, 60%{
+  content:"Editor";
+}
+61%, 80%{ 
+  content:"Comic Artist";
+}
+81%, 100%{
+  content:"Novelist";
+}
+}
+
+@media screen and (max-width: 768px){
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: rgba(0,0,0,0.8);
+    padding: 1rem 0;
+    border-radius: 8px;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+    color: ghostwhite;
+  }
+
+  .home-content {
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;     
+    margin-left: 0;          
+    margin-top: 5rem;        
+    gap: 1.5rem;             
+    text-align: center;
+  }
+
+  .home-content .images {
+    display: flex;          
+    justify-content: center;
+    margin-top: 40%;
+  }
+
+  .home-content .images img{ 
+    width: 140px; 
+    height: 220px; 
+    border-radius: 50%;
+    position: static; 
+  }
+
+  .home-content h1{ 
+    font-size: 26px;
+   }
+  .typing-text{ 
+    font-size: 20px; 
+  }
+  .home-content p{ 
+    font-size: 14px; 
+    line-height: 20px; 
+  }
+}
+
+ 

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+         * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://i.pinimg.com/736x/5c/e3/02/5ce302308f641a47bd1ebda2b59cd9d1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #a8a8a8;
+        }
+
+    header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        header .back-button {
+            position: absolute;
+            left: 20px;
+        }
+
+        header .back-button img {
+            width: 42px;
+            cursor: pointer;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            padding: 0 20px;
+        }
+
+        .project-card {
+            background: #555555;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: .3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            margin: 12px 0 8px;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #181818;
+        }
+
+       
+        @media (max-width: 900px) {
+            .projects-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+     <header>
+        <a href="Portfolio Website.html" class="back-button">
+            <img src="https://www.svgrepo.com/show/18507/back-button.svg" alt="Back">
+        </a>
+        My Projects
+    </header>
+
+
+    <div class="projects-container">
+
+     <div class="project-card">
+    <img src="d:\Downloads\c792f831-81db-4af9-b3ca-09ebfde7b088.jpg" alt="Air Quality Monitoring Robot">
+    <h3>Air Quality Monitoring Robot</h3>
+    <p>Arduino-based system using MQ gas sensors, LCD display, LEDs, and buzzer alerts to monitor air quality.</p>
+</div>
+
+<div class="project-card">
+    <img src="d:\Downloads\3c0813cd-5b94-4676-ab06-e78f53993056.jpg" alt="Blog Website">
+    <h3>Blog Website/User Persona</h3> 
+    <p>A responsive blog website with posts, categories, and user-friendly navigation.</p>
+</div>
+
+
+<div class="project-card">
+    <img src="d:\Downloads\718ff86d-453f-4e24-821d-e5c8c5d822ed.jpg" alt="E-commerce Website">
+    <h3>E-commerce Website</h3>
+    <p>One-file PHP shop with search, add-to-cart functionality, live cart updates, and order placement using AJAX.</p>
+</div>
+
+<div class="project-card">
+    <img src="d:\Downloads\f313aa19-fa1e-41b5-bdd7-cbcd6c3ee80e.jpg" alt="Library Management System">
+    <h3>Library Management System</h3>
+    <p>PHP + MySQL system with secure login, full book and member CRUD, borrowing/return transactions, and search features.</p>
+</div>
+
+<div class="project-card">
+    <img src="d:\Downloads\09a7db61-4a2b-43d8-a82b-b6d62208c22b.jpg" alt="Calculator / Quiz App">
+    <h3>Calculator</h3>
+    <p>A web-based calculator with a clean interface for performing basic arithmetic operations.</p>
+</div>
+
+<div class="project-card">
+    <img src="d:\Downloads\d768c87a-a55b-48d0-9214-eeb13606aaf9.jpg" alt="PC Setup Shop">
+    <h3>PC Setup Shop</h3>
+    <p>A product showcase website for PC setups where users can browse products and view detailed information.</p>
+</div>
+
+
+    </div>
+
+</body>
+</html>
